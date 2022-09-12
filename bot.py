@@ -14,7 +14,7 @@ async def main(config: Namespace):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("-t", "--token", name="token", action="store")
+    parser.add_argument("-t", "--token", dest="token", action="store")
     config = parser.parse_args()
 
     asyncio.run(main(config))
