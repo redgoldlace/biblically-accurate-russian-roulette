@@ -92,6 +92,7 @@ class Roulette(Cog):
 
         match self.cylinder.roll_the_dice():
             case Chamber.bullet:
+                self.last_victim = ctx.author
                 await ctx.send("**Bang**! ⁽ʸᵒᵘ'ʳᵉ ᵈᵉᵃᵈ ⁿᵒʷ⁾")
             case Chamber.empty:
                 await ctx.send(f"*Click*! Nothing happens. {self.cylinder.remaining} chambers remain.")
