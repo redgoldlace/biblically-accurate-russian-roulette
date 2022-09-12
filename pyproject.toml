@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "biblically-accurate-russian-roulette"
+version = "0.1.0"
+description = "Need I say more?"
+authors = ["Kaylynn <mkaylynn7@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "biblically_accurate_russian_roulette"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
