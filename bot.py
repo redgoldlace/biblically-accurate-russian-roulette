@@ -8,8 +8,8 @@ from discord.ext.commands import Bot
 async def main(config: Namespace):
     async with Bot(command_prefix="oh shoot! ", intents=Intents.all()) as bot:
         await bot.load_extension("roulette")
-
         await bot.login(config.token)
+        await bot.connect()
 
 
 if __name__ == "__main__":
