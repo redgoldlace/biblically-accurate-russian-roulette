@@ -113,7 +113,7 @@ class Roulette(Cog):
             await ctx.send(f"A revolver with {chambers} chambers is pretty useless")
         elif chambers == 1:
             await ctx.send("Congratulations. You invented a pistol. Try more than one chamber next time.")
-        elif chambers > 12:
+        elif chambers > 30:
             await ctx.send("I don't think they make revolvers with that many chambers.")
         else:
             self.cylinder.load(chambers)
